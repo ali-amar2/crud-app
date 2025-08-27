@@ -1,6 +1,6 @@
 # CRUD System
 
-A simple CRUD (Create, Read, Update, Delete) application built with **HTML, CSS, JavaScript, and Bootstrap**.
+A simple CRUD (Create, Read, Update, Delete) application built with **HTML, CSS(Bootstrap), and JavaScript**.
 
 ## 🚀 Features
 - Add new items
@@ -10,8 +10,5 @@ A simple CRUD (Create, Read, Update, Delete) application built with **HTML, CSS,
 
 ## 🛠️ Technologies Used
 - HTML5
-- CSS3
 - Bootstrap
 - JavaScript (Vanilla)
-
-## 📂 Project Structure
