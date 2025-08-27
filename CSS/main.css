@@ -1,0 +1,27 @@
+body {
+    background-color: #121415;
+}
+
+.form-control.description {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-control,
+label {
+    font-family: var(--bs-font-sans-serif);
+}
+
+.inner {
+    background-color: #182025;
+}
+
+.card {
+    background-color: #121415;
+}
+
+.inner img {
+    height: 180px;
+    object-fit: contain;
+    background-color: #fff;
+}

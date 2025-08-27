@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Main Style Sheet  -->
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+
+<body>
+    <div class="header vh-100 py-4">
+        <div class="container">
+            <h1 class="text-center text-white mb-4 h2">Product Management System</h1>
+            <form class="mb-4">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="category" placeholder="Category" list="categories">
+                    <label for="category">Category</label>
+                    <datalist id="categories">
+                        <option>Mobile</option>
+                        <option>Laptop</option>
+                        <option>Screen</option>
+                        <option>Camera</option>
+                    </datalist>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control mt-3" id="price" placeholder="Price">
+                    <label for="price">Price</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control description " placeholder="Description" id="description"></textarea>
+                    <label for="description">Description</label>
+                </div>
+                <div>
+                    <input class="form-control mt-3" type="file" name="file" id="file" accept="image/*">
+                </div>
+                <button class="btn btn-primary mt-3" type="button" onclick="addProducts()">Add Product</button>
+            </form>
+            <input type="search" name="search" id="search" class="form-control w-75 mx-auto my-3"
+                placeholder="Search Products" oninput="searchProducts ()">
+
+            <div class="row" id="productContainer">
+            </div>
+
+        </div>
+    </div>
+    <script src="javaScript/index.js"></script>
+</body>
+
+</html>
