@@ -64,13 +64,11 @@ function displayProduct(index) {
     `;
   productContainer.innerHTML += productHtml;
 }
-// دالة التعديل
 function updateProduct(index) {
   nameInput.value = productList[index].name;
   categoryInput.value = productList[index].category;
   priceInput.value = productList[index].price;
   descriptionInput.value = productList[index].description;
-  // لا يمكن تعبئة input الصورة مباشرة لأسباب أمنية، نتركه فارغ
   imageInput.value = null;
   currentEditIndex = index;
   addBtn.textContent = "Update Product";
@@ -98,8 +96,9 @@ function deleteProduct(index) {
 
 function searchProducts() {
   productContainer.innerHTML = "";
+  var searchValue = searchInput.value.toLowerCase();
   for (var i = 0; i < productList.length; i++) {
-    if (productList[i].name.toLowerCase().includes(searchInput.value)) {
+    if (productList[i].name.toLowerCase().includes(searchValue)) {
       displayProduct(i);
     }
   }
